@@ -1,0 +1,16 @@
+PODS:
+  - SMPopover (0.0.2)
+
+DEPENDENCIES:
+  - SMPopover (from `/Users/sreehari.nambiar/Documents/Sample/Opensource/SMPopover/`)
+
+EXTERNAL SOURCES:
+  SMPopover:
+    :path: "/Users/sreehari.nambiar/Documents/Sample/Opensource/SMPopover/"
+
+SPEC CHECKSUMS:
+  SMPopover: 341407c9b3d9efb89a870407575e78fba1ee7ef1
+
+PODFILE CHECKSUM: 378624149b0d185adb75199d0cf2b3f1c2d76271
+
+COCOAPODS: 1.8.4

@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import SMPopover
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
-
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        let popover = SMPopover()
+        popover.autoDismiss = true
+        popover.autoDismissTimeInterval = 1.0
+        popover.contentSize = CGSize(width: 120, height: 36)
+        popover.textFont = UIFont.systemFont(ofSize: 14)
+        popover.textColor = .green
+        popover.text = "Popover"
+        popover.present(from: sender)
+    }
+    
 }
 

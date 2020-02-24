@@ -1,0 +1,23 @@
+{
+  "name": "SMPopover",
+  "version": "0.0.2",
+  "license": "MIT",
+  "summary": "Simple Popover for iOS",
+  "homepage": "https://github.com/snambiar387/SMPopover",
+  "authors": {
+    "Sreehari": "snambiar387@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/snambiar387/SMPopover.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": [
+    "5.0",
+    "5.1"
+  ],
+  "source_files": "Source/*.swift",
+  "swift_version": "5.1"
+}
