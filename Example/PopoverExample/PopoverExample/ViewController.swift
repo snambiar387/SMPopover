@@ -19,7 +19,10 @@ class ViewController: UIViewController {
 
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
+        showPopover(from: sender)
+    }
+    
+    func showPopover(from view: UIView) {
         let popover = SMPopover()
         popover.autoDismiss = true
         popover.autoDismissTimeInterval = 1.0
@@ -27,8 +30,7 @@ class ViewController: UIViewController {
         popover.textFont = UIFont.systemFont(ofSize: 14)
         popover.textColor = .green
         popover.text = "Popover"
-        popover.present(from: sender)
+        popover.present(from: view)
     }
-    
 }
 
