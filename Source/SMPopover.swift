@@ -8,6 +8,15 @@
 
 import UIKit
 
+public struct Padding {
+    let vertical: CGFloat
+    let horizontol: CGFloat
+    
+    public init(horizontol: CGFloat, vertical: CGFloat) {
+        self.vertical = vertical
+        self.horizontol = horizontol
+    }
+}
 
 public class SMPopover: UIView {
     
@@ -22,12 +31,7 @@ public class SMPopover: UIView {
     public var autoDismissTimeInterval: TimeInterval = 5.7
     public var arrowDirection = ArrowDirection.down
     public var arrowHeight: CGFloat = 8
-    public var contentSize: CGSize = .zero {
-        didSet {
-            
-        }
-    }
-    public var contentInset: UIEdgeInsets = .zero
+    public var padding: Padding = Padding(horizontol: 12, vertical: 12)
     public var color: UIColor = .black
     public var textColor: UIColor {
         set {
@@ -82,21 +86,28 @@ public class SMPopover: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        label.frame = CGRect(x: 0, y: 0, width: bounds.width, height: contentSize.height)
+        label.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height-arrowHeight)
     }
+    
     
     private func frame(for direction: ArrowDirection,
                        from source: UIView) -> CGRect {
+        
+        let size = text?.size(withConstrainedWidth: UIScreen.main.bounds.size.width, font: textFont) ?? CGSize.zero
+        let totalHeight = (2 * padding.vertical) + size.height + arrowHeight
+        let totalWidth = (2 * padding.horizontol) + size.width
+                
         var x: CGFloat = 0
         var y: CGFloat = 0
         
         switch arrowDirection {
             
         case .down:
-            x = source.frame.midX - (contentSize.width / 2)
-            y = source.frame.minY - (contentSize.height + arrowHeight)
+            x = source.frame.midX - (totalWidth / 2)
+            y = source.frame.minY - totalHeight
         }
-        return CGRect(x: x, y: y, width: contentSize.width , height: contentSize.height + arrowHeight)
+        
+        return CGRect(x: x, y: y, width: totalWidth , height: totalHeight)
     }
     
     //MARK:- Public Methods
@@ -105,6 +116,7 @@ public class SMPopover: UIView {
         guard !isPresented else { return }
         isPresented = true
         frame = frame(for: arrowDirection, from: source)
+        label.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height-arrowHeight)
         source.superview?.addSubview(self)
         
         guard autoDismiss else {
@@ -146,5 +158,14 @@ public class SMPopover: UIView {
         arrowPath.addLine(to: CGPoint(x: right, y: rectBounds.maxY))
         arrowPath.close()
         arrowPath.fill()
+    }
+}
+
+extension String {
+    func size(withConstrainedWidth width: CGFloat, font: UIFont) -> CGSize {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font
+            : font], context: nil)
+        return boundingBox.size
     }
 }
