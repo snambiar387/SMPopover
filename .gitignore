@@ -1,0 +1,34 @@
+
+Example/PopoverExample/PopoverExample.xcworkspace/contents.xcworkspacedata
+*.xcscheme
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-acknowledgements.markdown
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-acknowledgements.plist
+Example/PopoverExample/Pods/Pods.xcodeproj/xcuserdata/sreehari.nambiar.xcuserdatad/xcschemes/xcschememanagement.plist
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-dummy.m
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks-Debug-input-files.xcfilelist
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample.debug.xcconfig
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample.modulemap
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample.release.xcconfig
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover-dummy.m
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover-Info.plist
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover-prefix.pch
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover-umbrella.h
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover.modulemap
+Example/PopoverExample/Pods/Target Support Files/SMPopover/SMPopover.xcconfig
+Example/PopoverExample/PopoverExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Example/PopoverExample/PopoverExample.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Example/PopoverExample/PopoverExample.xcodeproj/project.xcworkspace/xcuserdata/sreehari.nambiar.xcuserdatad/UserInterfaceState.xcuserstate
+Example/PopoverExample/PopoverExample.xcodeproj/xcuserdata/sreehari.nambiar.xcuserdatad/xcschemes/xcschememanagement.plist
+Example/PopoverExample/PopoverExample.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-umbrella.h
+Example/PopoverExample/PopoverExample.xcworkspace/xcuserdata/sreehari.nambiar.xcuserdatad/UserInterfaceState.xcuserstate
+Example/PopoverExample/PopoverExample.xcworkspace/xcuserdata/sreehari.nambiar.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-Info.plist
+SMPopover/SMPopover.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks.sh
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks-Release-output-files.xcfilelist
+SMPopover/SMPopover.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks-Release-input-files.xcfilelist
+SMPopover/SMPopover.xcodeproj/project.xcworkspace/xcuserdata/sreehari.nambiar.xcuserdatad/UserInterfaceState.xcuserstate
+Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks-Debug-output-files.xcfilelist
+SMPopover/SMPopover.xcodeproj/xcuserdata/sreehari.nambiar.xcuserdatad/xcschemes/xcschememanagement.plist
