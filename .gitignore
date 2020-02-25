@@ -32,3 +32,4 @@ Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-Popove
 SMPopover/SMPopover.xcodeproj/project.xcworkspace/xcuserdata/sreehari.nambiar.xcuserdatad/UserInterfaceState.xcuserstate
 Example/PopoverExample/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks-Debug-output-files.xcfilelist
 SMPopover/SMPopover.xcodeproj/xcuserdata/sreehari.nambiar.xcuserdatad/xcschemes/xcschememanagement.plist
+*.xcbkptlist
