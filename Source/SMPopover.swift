@@ -114,20 +114,22 @@ public class SMPopover: UIView {
 
     public func present(from source: UIView) {
         guard !isPresented else { return }
-        isPresented = true
-        frame = frame(for: arrowDirection, from: source)
-        label.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height-arrowHeight)
-        source.superview?.addSubview(self)
         
-        guard autoDismiss else {
-            presentationCompletion?()
-            return
+        UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseIn, animations: {
+            self.isPresented = true
+            self.frame = self.frame(for: self.arrowDirection, from: source)
+            self.label.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height-self.arrowHeight)
+            source.superview?.addSubview(self)
+        }) { (completed) in
+            guard self.autoDismiss else {
+                self.presentationCompletion?()
+                return
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.autoDismissTimeInterval) {[weak self] in
+                self?.dismiss()
+            }
+            self.presentationCompletion?()
         }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + autoDismissTimeInterval) {[weak self] in
-            self?.dismiss()
-        }
-        presentationCompletion?()
     }
     
     public func dismiss() {

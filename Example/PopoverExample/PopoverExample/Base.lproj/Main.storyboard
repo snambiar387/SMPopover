@@ -55,10 +55,19 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1B-iM-u1a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEn-8h-aFS">
+                                <rect key="frame" x="355" y="832" width="50" height="30"/>
+                                <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKh-U1-X0U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="uOl-gb-mXX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DYv-qk-B5f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rEn-8h-aFS" secondAttribute="trailing" constant="9" id="SuR-Pk-xYy"/>
+                            <constraint firstItem="rEn-8h-aFS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Y9W-0f-3dY"/>
                             <constraint firstItem="uOl-gb-mXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xMV-HQ-fNr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

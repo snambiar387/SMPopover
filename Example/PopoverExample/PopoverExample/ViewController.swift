@@ -15,11 +15,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      
         
     }
 
     
     @IBAction func buttonTapped(_ sender: UIButton) {
+        showPopover(from: sender)
+    }
+    
+    func showPopover(from view: UIView) {
         let popover = SMPopover()
         popover.autoDismiss = true
         popover.autoDismissTimeInterval = 1.0
@@ -27,11 +32,7 @@ class ViewController: UIViewController {
         popover.textColor = .green
         popover.text = "Popover"
         popover.padding = Padding(horizontol: 10, vertical: 8)
-        popover.present(from: sender)
-    }
-    
-    func showPopover(from view: UIView) {
-        
+        popover.present(from: view)
     }
 }
 
